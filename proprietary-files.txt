@@ -1712,6 +1712,7 @@ vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so;MODULE_SUFFIX=_
 vendor/lib64/sensors.qsh.so
 
 # Sensors config
+my_product/etc/fusionlight_profile/fusionlight_Main_1_3.json:odm/etc/fusionlight.json
 odm/etc/sensor/config/giulia_qrd_ois_system.json
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/lanai_mtp_alsps.json

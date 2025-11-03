@@ -81,6 +81,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SHIPPING_API_LEVEL := 35
 
 # Sensors
+$(call soong_config_set,oplus_sensors,uses_nextgen_fusion_sensor,true)
 PRODUCT_PACKAGES += \
     vendor.lineage.oplus_als.service
 
