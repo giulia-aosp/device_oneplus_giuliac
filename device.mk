@@ -36,6 +36,9 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint3-service.strongbox.nxp \
     android.hardware.weaver-service.nxp
 
+# GameBar
+$(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
+
 # IR
 $(call inherit-product-if-exists, vendor/oneplus/ir/ir.mk)
 
