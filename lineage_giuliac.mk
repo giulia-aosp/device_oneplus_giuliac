@@ -12,8 +12,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/giuliac/device.mk)
 
 # Inherit some common Lineage stuff.
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Axion flags
+AXION_MAINTAINER := Genoxci
+AXION_PROCESSOR := Snapdragon®_8_Gen_3
+AXION_CAMERA_FRONT_INFO := 16
+AXION_CAMERA_REAR_INFO := 50,8,2
+TARGET_ENABLE_BLUR := true
+TORCH_STR_SUPPORTED := true
+
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := walt
+GPU_FREQS_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+
+# Device identifier
 PRODUCT_NAME := lineage_giuliac
 PRODUCT_DEVICE := giuliac
 PRODUCT_MANUFACTURER := OnePlus

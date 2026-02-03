@@ -1,2 +1,6 @@
 # IFAA
 sys.oplus.ifaa.model=ONEPLUS-R23851
+
+# ScrollOptimizer
+persist.sys.perf.scroll_opt = true
+persist.sys.perf.scroll_opt.heavy_app = 1
