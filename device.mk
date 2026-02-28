@@ -31,11 +31,6 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0-service \
     hwservicemanager
 
-# Keymint
-PRODUCT_PACKAGES += \
-    android.hardware.security.keymint3-service.strongbox.nxp \
-    android.hardware.weaver-service.nxp
-
 # GameBar
 $(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
 
