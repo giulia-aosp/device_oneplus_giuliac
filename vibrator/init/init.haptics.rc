@@ -1,3 +1,9 @@
+on property:debug.haptic_profile=default
+    setprop persist.vendor.haptic_profile default
+
+on property:debug.haptic_profile=soft
+    setprop persist.vendor.haptic_profile soft
+
 on property:debug.haptic_profile=richtap
     setprop persist.vendor.haptic_profile richtap
 
