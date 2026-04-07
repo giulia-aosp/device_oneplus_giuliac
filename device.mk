@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
 # GameBar
 $(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
 
+# Init
+PRODUCT_PACKAGES += \
+    init.haptics.rc
+
 # IR
 $(call inherit-product-if-exists, vendor/oneplus/ir/ir.mk)
 
@@ -79,8 +83,10 @@ $(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,true)
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
-$(call soong_config_set_bool,qti_vibrator,use_effect_stream,true)
-$(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.oplus.giuliac)
+$(call soong_config_set,qti_vibrator,use_effect_stream,true)
+$(call soong_config_set,qti_vibrator,use_effect_stream_strength,true)
+$(call soong_config_set,qti_vibrator,use_primitive_effect_stream,true)
+$(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.oplus_sm8650-richtap)
 
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
