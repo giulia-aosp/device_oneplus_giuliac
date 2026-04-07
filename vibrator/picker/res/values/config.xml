@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2024 The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+
+    config_hapticProfilePropKey: the sysprop read and written by the picker.
+    config_hapticSettingsKey: the Settings.Secure key used as persistent backup.
+    Both should match what your libqtivibratoreffect and init.haptics.rc expect.
+-->
+<resources>
+    <string name="config_hapticProfilePropKey" translatable="false">persist.sys.haptic_profile</string>
+</resources>

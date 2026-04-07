@@ -1,0 +1,26 @@
+android_app {
+    name: "HapticsProfilePicker",
+    defaults: [
+        "SettingsLibDefaults",
+    ],
+
+    srcs: [
+        "src/**/*.kt",
+        "src/**/*.java"
+    ],
+
+    certificate: "platform",
+    resource_dirs: ["res"],
+    platform_apis: true,
+    system_ext_specific: true,
+    privileged: false,
+
+    static_libs: [
+        "androidx.core_core",
+        "org.lineageos.settings.resources"
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}

@@ -43,6 +43,9 @@ PRODUCT_PACKAGES += \
 # GameBar
 $(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
 
+# Haptics Profile Picker
+$(call inherit-product-if-exists, device/oneplus/giuliac/vibrator/picker.mk)
+
 # Init
 PRODUCT_PACKAGES += \
     init.haptics.rc

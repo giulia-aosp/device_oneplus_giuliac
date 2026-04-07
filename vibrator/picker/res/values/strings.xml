@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2024 The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_label" translatable="false">Haptics Profile</string>
+    <string name="haptics_profile_title">Haptics Profile</string>
+    <string name="haptics_profile_summary">Change vibration feel and pattern</string>
+    <string name="haptics_profile_cancel">Cancel</string>
+</resources>

@@ -1,0 +1,3 @@
+vendor_public_prop(vendor_haptic_profile_prop)
+get_prop(hal_vibrator_default, vendor_haptic_profile_prop)
+set_prop(vendor_init, vendor_haptic_profile_prop)

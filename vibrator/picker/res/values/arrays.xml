@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2024 The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+
+    To add or remove profiles, edit the two arrays below.
+    Each entry in haptic_effect_style_entries is the display name shown in the UI.
+    Each entry in haptic_effect_style_values is the value written to persist.vendor.haptic_profile.
+    Both arrays must have the same number of items and be in the same order.
+    The first entry is used as the default if no prop is set.
+-->
+<resources>
+    <string-array name="haptic_effect_style_entries" translatable="false">
+        <item>Stock Default</item>
+        <item>Stock Soft</item>
+        <item>OP12 RichTap</item>
+        <item>OP12 Crisp</item>
+        <item>OP12 Gentle</item>
+        <item>OP13 Crisp</item>
+        <item>OP13 Gentle</item>
+    </string-array>
+
+    <string-array name="haptic_effect_style_values" translatable="false">
+        <item>default</item>
+        <item>soft</item>
+        <item>richtap</item>
+        <item>crisp</item>
+        <item>gentle</item>
+        <item>op13crisp</item>
+        <item>op13gentle</item>
+    </string-array>
+</resources>

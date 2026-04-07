@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.haptics.profile">
+
+    <application
+        android:label="@string/app_label"
+        android:hasCode="true">
+
+        <activity
+            android:name=".HapticsProfileActivity"
+            android:label="@string/haptics_profile_title"
+            android:exported="true"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog">
+            <intent-filter>
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.sound" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/haptics_profile_summary" />
+        </activity>
+
+    </application>
+</manifest>
