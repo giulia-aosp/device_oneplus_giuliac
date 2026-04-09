@@ -53,6 +53,11 @@ PRODUCT_PACKAGES += \
 # IR
 $(call inherit-product-if-exists, vendor/oneplus/ir/ir.mk)
 
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint3-service.strongbox.nxp \
+    android.hardware.weaver-service.nxp
+
 # LiveDisplay
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,false)
 
