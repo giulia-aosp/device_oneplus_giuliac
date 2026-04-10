@@ -73,10 +73,6 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget \
     OPlusWifiResTarget
 
-# Remove Packages
-PRODUCT_PACKAGES += \
-    RemovePackagesGiuliac
-
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 35
 
