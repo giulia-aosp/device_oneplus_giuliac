@@ -40,6 +40,9 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0-service \
     hwservicemanager
 
+# Fingerprint
+$(call soong_config_set_bool,qtidisplay,oplus_udfps,true)
+
 # GameBar
 $(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
 
