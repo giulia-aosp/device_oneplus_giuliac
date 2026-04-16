@@ -15,14 +15,13 @@ $(call inherit-product, device/oneplus/giuliac/device.mk)
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Axion flags
-AXION_MAINTAINER := Genoxci
-AXION_PROCESSOR := Snapdragon®_8_Gen_3
-AXION_CAMERA_FRONT_INFO := 16
-AXION_CAMERA_REAR_INFO := 50,8,2
+# EvoX Flags
+EVO_BUILD_TYPE := Unofficial
+WITH_GMS := true
+BUILD_BCR := true
+TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
-TORCH_STR_SUPPORTED := true
-TARGET_INCLUDE_AXFX := true
+
 
 PERF_GOV_SUPPORTED := true
 PERF_DEFAULT_GOV := walt
