@@ -47,9 +47,6 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 $(call soong_config_set_bool,qtidisplay,oplus_udfps,true)
 
-# GameBar
-$(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
-
 # Haptics Profile Picker
 $(call inherit-product-if-exists, device/oneplus/giuliac/vibrator/picker.mk)
 
