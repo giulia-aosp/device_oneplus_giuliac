@@ -38,7 +38,6 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,qtidisplay,bitclk_rate_permissive,true)
 $(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
 $(call soong_config_set,qtidisplay,sm8650_pxlw_vendor_namespace,vendor/oneplus/giuliac)
-$(call soong_config_set,qtidisplay,sm8650_pxlw_hw_iris7,true)
 
 # HIDL
 PRODUCT_PACKAGES += \
