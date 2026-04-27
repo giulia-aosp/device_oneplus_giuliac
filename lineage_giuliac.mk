@@ -15,13 +15,6 @@ $(call inherit-product, device/oneplus/giuliac/device.mk)
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# EvoX Flags
-EVO_BUILD_TYPE := Unofficial
-WITH_GMS := true
-BUILD_BCR := true
-TARGET_HAS_UDFPS := true
-TARGET_ENABLE_BLUR := true
-
 
 PERF_GOV_SUPPORTED := true
 PERF_DEFAULT_GOV := walt
